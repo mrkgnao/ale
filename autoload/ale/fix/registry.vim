@@ -210,6 +210,11 @@ let s:default_registry = {
 \       'suggested_filetypes': ['hack'],
 \       'description': 'Fix Hack files with hackfmt.',
 \   },
+\   'ormolu': {
+\       'function': 'ale#fixers#ormolu#Fix',
+\       'suggested_filetypes': ['haskell'],
+\       'description': 'Fix Haskell files with ormolu.',
+\   },
 \   'floskell': {
 \       'function': 'ale#fixers#floskell#Fix',
 \       'suggested_filetypes': ['haskell'],
