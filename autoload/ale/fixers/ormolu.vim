@@ -14,6 +14,7 @@ function! ale#fixers#ormolu#Fix(buffer) abort
 
     return {
     \   'command': l:executable
+    \       . ' --mode inplace'
     \       . ' %t',
     \   'read_temporary_file': 1,
     \}
